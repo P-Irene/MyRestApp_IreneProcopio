@@ -15,10 +15,16 @@
 + activity_web_view.xml : aggiunta della WebView
 
 ## v1.3
-+ MainActivity.kl -> LoginActivity.kt
++ MainActivity.kt -> LoginActivity.kt
 + activity_main.xml -> activity_login.xml
 + SearchActivity.kt
 + activity_search.xml
 + DashboardActivity.kt
-+ activity_dashboard.xml
++ activity_dashboard.xml  
   Correzione di alcuni errori: funzioni, constraint, nomi dei file.
+
+## v1.4
++ DashboardActivity.kt -> eliminata
++ activity_dashboard.xml -> eliminata
++ LoginActivity.kt -> Intent per collegarla a MenuActivity.kt
++ activity_menu.xml -> layout del menù: ImageButton, constraint, id
