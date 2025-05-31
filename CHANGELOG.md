@@ -26,5 +26,5 @@
 ## v1.4
 + DashboardActivity.kt -> eliminata
 + activity_dashboard.xml -> eliminata
-+ LoginActivity.kt -> Intent per collegarla a MenuActivity.kt
++ LoginActivity.kt -> Intent per collegarla a MenuActivity.kt e funzione cifra() (implementazione cifrario di Vigenère)
 + activity_menu.xml -> layout del menù: ImageButton, constraint, id
