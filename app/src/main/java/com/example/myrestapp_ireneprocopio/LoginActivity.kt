@@ -18,9 +18,9 @@ class LoginActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }*/
-        var loginName : EditText  = findViewById(R.id.editText_name)
-        var loginPassword : EditText = findViewById(R.id.editText_password)
-        var btnLogin : Button = findViewById(R.id.btn_login)
+        val loginName : EditText  = findViewById(R.id.editText_name)
+        val loginPassword : EditText = findViewById(R.id.editText_password)
+        val btnLogin : Button = findViewById(R.id.btn_login)
         btnLogin.setOnClickListener {
             if(valida(loginPassword.text.toString(), loginPassword.text.toString())){
                 verifica(loginName, loginPassword)
@@ -31,19 +31,19 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
-    fun valida(name : String, password : String): Boolean{
+    private fun valida(name : String, password : String): Boolean{
         var answer = false
         if(name == "" || password == ""){
             Toast.makeText(this, "È necessario compilare i campi.", Toast.LENGTH_LONG).show()
         }else if(password.length < 8){
             Toast.makeText(this, "La password deve essere lunga almeno 8 caratteri.", Toast.LENGTH_LONG).show()
         } else{
-            answer = true;
+            answer = true
         }
         return answer
     }
 
-    fun verifica(loginName : EditText, loginPassword : EditText){
+    private fun verifica(loginName : EditText, loginPassword : EditText){
         if(loginName.text.toString() == "Nome"){
             if(loginPassword.text.toString() == "Password"){
                 Toast.makeText(this, "Utente verificato con successo", Toast.LENGTH_SHORT).show()
@@ -56,9 +56,9 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    fun cifra(password : String, alfabeto: String = "abcdefghijklmnopqrstuvwxyz"){
+    private fun cifra(password : String, alfabeto: String = "abcdefghijklmnopqrstuvwxyz"){
         var messaggioCifrato = ""
-        var key = "chiave";
+        val key = "chiave"
         var keyIndex = 0
 
         for (char in password.lowercase()) {
@@ -75,5 +75,7 @@ class LoginActivity : AppCompatActivity() {
                 messaggioCifrato += alfabeto[newIndex]
             }
         }
+        val  intent = Intent(this, MenuActivity::class.java).apply{}
+        startActivity(intent)
     }
 }

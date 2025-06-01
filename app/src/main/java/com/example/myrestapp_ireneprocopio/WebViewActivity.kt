@@ -23,6 +23,6 @@ class WebViewActivity : AppCompatActivity() {
         setContentView(myWebView)
         myWebView.loadUrl("")*/
         val webView = findViewById<WebView>(R.id.idWebview)
-        webView.loadUrl("")
+        webView.loadUrl("https://www.netflix.com/")
     }
 }

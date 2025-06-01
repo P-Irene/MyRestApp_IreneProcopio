@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">MyRestApp_IreneProcopio</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="search">Search</string>
+    <string name="films">Films</string>
+    <string name="search_the_title">Search the title</string>
+    <string name="filmsearch">FilmSearch</string>
+    <string name="watch">Watch</string>
+    <string name="crud">CRUD</string>
+    <string name="men">MENÙ</string>
+    <string name="dashboard">Dashboard</string>
 </resources>
